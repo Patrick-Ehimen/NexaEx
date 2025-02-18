@@ -34,7 +34,7 @@ jobs:
 
       - name: Build
         working-directory: ./cex-backend
-        run: go build -v ./...
+        run: go build -o ./bin/main -v ./...
 
       - name: Test
         working-directory: ./cex-backend
