@@ -5,12 +5,11 @@ import (
 	"testing"
 )
 
-func TestLimit(t *testing.T){
+func TestLimit(t *testing.T) {
 	l := NewLimit(10_000)
 	buyOrderA := NewOrder(true, 1067)
 	buyOrderB := NewOrder(true, 3400)
 	buyOrderC := NewOrder(true, 1007)
-
 
 	l.AddOrder(buyOrderA)
 	l.AddOrder(buyOrderB)
@@ -22,5 +21,5 @@ func TestLimit(t *testing.T){
 }
 
 func TestOrderbook(t *testing.T) {
-	
+	ob := NewOrderbook()
 }
